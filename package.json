@@ -1,16 +1,16 @@
 {
-  "name": "dnd-sheet",
+  "name": "deyralein",
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --port 4200",
     "build": "ng build",
     "build:dev": "ng build --configuration development",
-    "build:pro": "ng build --configuration production --base-href \"/dnd-sheet/\"",
+    "build:pro": "ng build --configuration production --base-href \"/deyralein/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "info": "ng version",
-    "deploy": "npm run build:pro && angular-cli-ghpages --dir=dist/dnd-sheet/browser"
+    "deploy": "npm run build:pro && angular-cli-ghpages --dir=dist/deyralein/browser"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +22,7 @@
     "@angular/platform-browser": "^20.0.0",
     "@angular/platform-browser-dynamic": "^20.0.0",
     "@angular/router": "^20.0.0",
+    "buffer": "^6.0.3",
     "node": "22.12",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

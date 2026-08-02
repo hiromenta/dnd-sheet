@@ -17,7 +17,7 @@ import { Paths } from './app.routes';
 })
 export class AppComponent implements OnInit {
 
-  title = 'DND Sheet';
+  title = 'Deyralein';
   loadedServices: any[] = [];
 
   constructor(

@@ -10,7 +10,7 @@ export class UtilsService {
     }
 
     resetTitle() {
-        document.title = 'DND Sheet';
+        document.title = 'Deyralein';
     }
 
     toTitleCase(string: string) {
@@ -27,6 +27,14 @@ export class UtilsService {
     getRandomSelector() {
         const number = Math.random() * 100;
         return 's' + number.toString().split('.')[1];
+    }
+
+    JsonToBase64(json: object) {
+        return btoa(JSON.stringify(json));
+    }
+
+    base64ToJson(base64: string) {
+        return JSON.parse(atob(base64));
     }
 
 }

@@ -70,7 +70,7 @@ export class TranslateService {
     }
 
     private _getLanguage(langCode: LanguageCode): Observable<any> {
-        return this._http.get(`/assets/languages/${langCode}.json`);
+        return this._http.get(`assets/languages/${langCode}.json`);
     }
 
 }

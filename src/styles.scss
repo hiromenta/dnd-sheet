@@ -2,16 +2,18 @@
 
 // Variables will be overwritten by themes.service.ts
 :root {
-    --primary: #662424;
-    --secondary: #B44D28;
-    --accent: #927C31;
-    --accentDark: #544B2D;
-    --background: #C6A784;
-    --text: #111;
+    --primary: #270C0E;
+    --secondary: #724706;
+    --accent: #44562d;
+    --accentDark: #1f2815;
+    --background: #151312;
+    --text: #E7E7E7;
 
     --white: #e7e7e7;
     --black: #111;
     --grey: #7c7c7c;
+    --red: #d92323;
+    --violet: #8c33d4;
 
     --danger: #721f2a;
     --success: #3d612e;
@@ -158,4 +160,20 @@ button {
             color: var(--grey);
         }
     }
+}
+
+.highlight {
+    color: var(--secondary);
+}
+
+.accent {
+    color: var(--accent);
+}
+
+.life {
+    color: var(--red);
+}
+
+.tar {
+    color: var(--violet);
 }

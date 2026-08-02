@@ -9,9 +9,9 @@
     },
     "dark": {
         "primary": "#270C0E",
-        "secondary": "#190D09",
-        "accent": "#323f21",
-        "accentDark": "#12170C",
+        "secondary": "#724706",
+        "accent": "#44562d",
+        "accentDark": "#1f2815",
         "background": "#151312",
         "text": "#E7E7E7"
     }

@@ -1,6 +1,6 @@
-name = "dnd-sheet"
+name = "deyralein"
 compatibility_date = "2026-03-04"
 
 [assets]
-directory = "./dist/dnd-sheet/browser"
+directory = "./dist/deyralein/browser"
 not_found_handling = "single-page-application"
