@@ -1,0 +1,23 @@
+{
+    "home": {
+        "title": "Home",
+        "go-settings": "Vai a impostazioni"
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "language": {
+            "title": "Lingua",
+            "languages": {
+                "english": "Inglese",
+                "italian": "Italiano"
+            }
+        },
+        "theme": {
+            "title": "Tema",
+            "themes": {
+                "light": "Chiaro",
+                "dark": "Scuro"
+            }
+        }
+    }
+}
