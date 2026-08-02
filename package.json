@@ -6,7 +6,7 @@
     "start": "ng serve --port 4200",
     "build": "ng build",
     "build:dev": "ng build --configuration development",
-    "build:pro": "ng build --configuration production",
+    "build:pro": "ng build --configuration production --base-href \"/dnd-sheet/\"",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "info": "ng version",
