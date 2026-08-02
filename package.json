@@ -9,7 +9,8 @@
     "build:pro": "ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "info": "ng version"
+    "info": "ng version",
+    "deploy": "npm run build:pro && angular-cli-ghpages --dir=dist/dnd-sheet/browser"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +32,7 @@
     "@angular/cli": "^20.0.0",
     "@angular/compiler-cli": "^20.0.0",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^3.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
