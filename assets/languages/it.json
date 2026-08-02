@@ -1,6 +1,7 @@
 {
     "home": {
         "title": "Home",
+        "go-character": "Vai al personaggio",
         "go-settings": "Vai a impostazioni"
     },
     "settings": {
@@ -19,5 +20,24 @@
                 "dark": "Scuro"
             }
         }
+    },
+    "character": {
+        "name": "Nome",
+        "race": "Razza",
+        "class": "Classe",
+        "dexterity": "Destrezza",
+        "intelligence": "Intelligenza",
+        "charisma": "Carisma",
+        "wisdom": "Saggezza",
+        "perception": "Percezione",
+        "life": "Vita",
+        "tar": "Tar",
+        "level": "Livello"
+    },
+    "races": {
+        "human": "Umano"
+    },
+    "classes": {
+        "druid": "Druido"
     }
 }
