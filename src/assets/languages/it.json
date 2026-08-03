@@ -35,9 +35,35 @@
         "level": "Livello"
     },
     "races": {
-        "human": "Umano"
+        "human": "Umano",
+        "demon": "Demone",
+        "dragon-kin": "Dragonide",
+        "elf": "Elfo",
+        "dwarf": "Nano",
+        "orc": "Orco",
+        "raankin-sml": "Raankin di taglia piccola",
+        "raankin-mdm": "Raankin di taglia media",
+        "raankin-lrg": "Raankin di taglia grande"
     },
     "classes": {
-        "druid": "Druido"
+        "druid": "Druido",
+        "arcane-mage": "Mago arcano",
+        "bard": "Bardo",
+        "armed-mage-sr": "Mago fisico ravvicinato",
+        "armed-mage-lr": "Mago fisico a distanza",
+        "sorcerer": "Stregone"
+    },
+    "abilities": {
+        "human": "Imparano le competenza due settimane più velocemente",
+        "demon": {
+            "air": "Immuni ai danni da caduta",
+            "earth": "Immuni ai danni da caduta",
+            "fire": "Immuni al fuoco se da fonti non magiche",
+            "ice": "Immuni al ghiaccio se da fonti non magiche"
+        },
+        "dragon-kin": "Possono fiutare le tracce di magia",
+        "elf": "Possono capire quale magia c'è all'interno di un libro",
+        "dwarf": "Possono identificare un materiale guardandolo",
+        "orc": "Hanno +3 ai tiri di forza"
     }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import { Character, CharacterModel } from "../../models/dnd.model";
-import { Human } from "../../models/races.model";
-import { Druid } from "../../models/classes.model";
+import { Character, PartialCharacterModel } from "../../models/dnd.model";
+import { DragonKin } from "../../models/races.model";
+import { Bard } from "../../models/classes.model";
 import { TranslatePipe } from "../../pipes/translate.pipe";
 
 @Component({
@@ -16,10 +16,16 @@ export class CharacterComponent implements OnInit {
     character?: Character;
 
     ngOnInit(): void {
-        const model: CharacterModel = {
+        const model: PartialCharacterModel = {
             name: 'Test',
-            race: new Human(),
-            class: new Druid()
+            race: new DragonKin(),
+            class: new Bard(),
+
+            dexterity: -4 + 5,
+            intelligence: -4 + 5,
+            charisma: -4 + 5,
+            wisdom: -4 + 5,
+            perception: -4 + 6
         };
 
         this.character = new Character(model);

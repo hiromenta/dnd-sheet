@@ -31,11 +31,11 @@
             </div>
 
             <div class="values">
-                <div>{{ character?.dexterity }}</div>
-                <div>{{ character?.intelligence }}</div>
-                <div>{{ character?.charisma }}</div>
-                <div>{{ character?.wisdom }}</div>
-                <div>{{ character?.perception }}</div>
+                <div>{{ character?.dexterity }} {{ character?.getModifier(character!.dexterity) }}</div>
+                <div>{{ character?.intelligence }} {{ character?.getModifier(character!.intelligence) }}</div>
+                <div>{{ character?.charisma }} {{ character?.getModifier(character!.charisma) }}</div>
+                <div>{{ character?.wisdom }} {{ character?.getModifier(character!.wisdom) }}</div>
+                <div>{{ character?.perception }} {{ character?.getModifier(character!.perception) }}</div>
             </div>
         </div>
 

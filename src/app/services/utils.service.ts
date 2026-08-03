@@ -1,4 +1,6 @@
 import { Injectable } from "@angular/core";
+import { Human } from "../models/races.model";
+import { Druid } from "../models/classes.model";
 
 @Injectable({ providedIn: 'root' })
 export class UtilsService {
