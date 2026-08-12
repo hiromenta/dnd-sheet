@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Character, PartialCharacterModel } from "../../models/dnd.model";
+import { Character, PartialCharacterModel } from "../../models/deyralein.model";
 import { DragonKin } from "../../models/races.model";
 import { Bard } from "../../models/classes.model";
 import { TranslatePipe } from "../../pipes/translate.pipe";

@@ -14,6 +14,10 @@ export class HomeComponent {
 
     constructor (private _router: Router) {}
 
+    goToMakeCharacter() {
+        this._router.navigate([Paths.MAKE_CHARACTER]);
+    }
+
     goToCharacter() {
         this._router.navigate([Paths.CHARACTER]);
     }

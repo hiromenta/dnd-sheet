@@ -47,3 +47,12 @@
     align-items: center;
     gap: 0.5rem;
 }
+
+input {
+    background-color: var(--background);
+    outline: none;
+    margin: none;
+    border: 1px solid var(--text);
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+}

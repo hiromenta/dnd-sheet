@@ -6,7 +6,8 @@ export enum ControlType {
     EMAIL,
     RADIO,
     CHECKBOX,
-    COLOR
+    COLOR,
+    NUMBER
 }
 
 export interface Control {
@@ -21,6 +22,8 @@ export interface Control {
     defaultValue?: any;
     canClear?: boolean;
     label?: string;
+    max?: number;
+    min?: number;
 }
 
 export interface MyForm {

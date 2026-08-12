@@ -1,5 +1,5 @@
-export interface DndSetup {
-    charachters: Character[];
+export interface DeyraleinSetup {
+    charachters: CharacterModel[];
 }
 
 export interface PartialCharacterModel {
@@ -136,7 +136,7 @@ export class Race {
     bonusWisdom!: number;
     bonusPerception!: number;
 
-    constructor() {
+    updateAbility() {
         this.ability = 'abilities.' + this.description;
     }
 

@@ -1,4 +1,4 @@
-import { CharacterClass, CharacterClasses } from "./dnd.model";
+import { CharacterClass, CharacterClasses } from "./deyralein.model";
 
 export class Druid extends CharacterClass {
 
@@ -60,4 +60,21 @@ export class Sorcerer extends CharacterClass {
     override bonusIntelligence: number = -2;
     override bonusPerception: number = 1;
 
+}
+
+export function getClass(characterClass: CharacterClasses) {
+    switch (characterClass) {
+        case CharacterClasses.DRUID:
+            return new Druid();
+        case CharacterClasses.ARCANE_MAGE:
+            return new ArcaneMage();
+        case CharacterClasses.BARD:
+            return new Bard();
+        case CharacterClasses.ARMED_MAGE_SR:
+            return new ArmedMageSR();
+        case CharacterClasses.ARMED_MAGE_LR:
+            return new ArmedMageLR();
+        case CharacterClasses.SORCERER:
+            return new Sorcerer();
+    }
 }
