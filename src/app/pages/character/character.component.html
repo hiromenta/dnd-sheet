@@ -1,54 +1,52 @@
-<div class="character">
-    <div class="avatar">
-        <div class="image">
-            <img [src]="character?.imageUrl" alt="image">
-            <div class="level">{{ 'character.level' | translate }} {{ character?.level }}</div>
-        </div>
-    </div>
-
-    <div class="description">
-        <div class="info">
-            <div class="labels">
-                <div class="highlight">{{ 'character.name' | translate }}:</div>
-                <div class="highlight">{{ 'character.race' | translate }}:</div>
-                <div class="highlight">{{ 'character.class' | translate }}:</div>
-            </div>
-
-            <div class="values">
-                <div>{{ character?.name }}</div>
-                <div>{{ ('races.' + character?.race?.description) | translate }}</div>
-                <div>{{ ('classes.' + character?.class?.description) | translate }}</div>
-            </div>
-        </div>
-
-        <div class="stats">
-            <div class="labels">
-                <div class="highlight">{{ 'character.dexterity' | translate }}:</div>
-                <div class="highlight">{{ 'character.intelligence' | translate }}:</div>
-                <div class="highlight">{{ 'character.charisma' | translate }}:</div>
-                <div class="highlight">{{ 'character.wisdom' | translate }}:</div>
-                <div class="highlight">{{ 'character.perception' | translate }}:</div>
-            </div>
-
-            <div class="values">
-                <div>{{ character?.dexterity }} {{ character?.getModifier(character!.dexterity) }}</div>
-                <div>{{ character?.intelligence }} {{ character?.getModifier(character!.intelligence) }}</div>
-                <div>{{ character?.charisma }} {{ character?.getModifier(character!.charisma) }}</div>
-                <div>{{ character?.wisdom }} {{ character?.getModifier(character!.wisdom) }}</div>
-                <div>{{ character?.perception }} {{ character?.getModifier(character!.perception) }}</div>
-            </div>
-        </div>
-
-        <div class="situation">
-            <div class="labels">
-                <div class="life">{{ 'character.life' | translate }}:</div>
-                <div class="tar">{{ 'character.tar' | translate }}:</div>
-            </div>
-
-            <div class="values">
-                <div><span class="life">{{ character?.life }}</span>/{{ character?.maxLife }}</div>
-                <div><span class="tar">{{ character?.tar }}</span>/{{ character?.maxTar }}</div>
-            </div>
-        </div>
-    </div>
+<div class="image">
+    <img [src]="character?.imageUrl" alt="image">
+    <div class="level">{{ 'character.level' | translate }} {{ character?.level }}</div>
 </div>
+
+<div>
+    <span class="highlight">{{ 'character.name' | translate }}:</span>
+    <span>{{ character?.name }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.race' | translate }}:</span>
+    <span>{{ ('races.' + character?.race?.description) | translate }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.class' | translate }}:</span>
+    <span>{{ ('classes.' + character?.class?.description) | translate }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.dexterity' | translate }}:</span>
+    <span>{{ character?.dexterity }} {{ character?.getModifier(character!.dexterity) }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.intelligence' | translate }}:</span>
+    <span>{{ character?.intelligence }} {{ character?.getModifier(character!.intelligence) }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.charisma' | translate }}:</span>
+    <span>{{ character?.charisma }} {{ character?.getModifier(character!.charisma) }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.wisdom' | translate }}:</span>
+    <span>{{ character?.wisdom }} {{ character?.getModifier(character!.wisdom) }}</span>
+</div>
+
+<div>
+    <span class="highlight">{{ 'character.perception' | translate }}:</span>
+    <span>{{ character?.perception }} {{ character?.getModifier(character!.perception) }}</span>
+</div>
+
+<div>
+    <span class="life">{{ 'character.life' | translate }}:</span>
+    <span><span class="life">{{ character?.life }}</span>/{{ character?.maxLife }}</span>
+</div>
+    <span class="tar">{{ 'character.tar' | translate }}:</span>
+    <span><span class="tar">{{ character?.tar }}</span>/{{ character?.maxTar }}</span>
+<div>

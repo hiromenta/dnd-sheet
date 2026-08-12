@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
-import { Character, PartialCharacterModel } from "../../models/deyralein.model";
-import { DragonKin } from "../../models/races.model";
-import { Bard } from "../../models/classes.model";
+import { Character } from "../../models/deyralein.model";
 import { TranslatePipe } from "../../pipes/translate.pipe";
+import { ActivatedRoute } from "@angular/router";
+import { DeyraleinService } from "../../services/deyralein.service";
 
 @Component({
     selector: 'my-character',
@@ -15,20 +15,13 @@ export class CharacterComponent implements OnInit {
 
     character?: Character;
 
+    constructor(private _route: ActivatedRoute, private _deyraleinService: DeyraleinService) {}
+
     ngOnInit(): void {
-        const model: PartialCharacterModel = {
-            name: 'Test',
-            race: new DragonKin(),
-            class: new Bard(),
+        const id = this._route.snapshot.queryParamMap.get('id');
+        const model = this._deyraleinService.setup.charachters.find(c => c.id === id);
 
-            dexterity: -4 + 5,
-            intelligence: -4 + 5,
-            charisma: -4 + 5,
-            wisdom: -4 + 5,
-            perception: -4 + 6
-        };
-
-        this.character = new Character(model);
+        this.character = new Character(undefined, model);
     }
 
 }

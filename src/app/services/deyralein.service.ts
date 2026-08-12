@@ -12,13 +12,13 @@ export class DeyraleinService {
         };
     }
 
-    get setup() {
+    get setup(): DeyraleinSetup {
         if (!this._setup) {
             const setupFromStorage = localStorage.getItem('setup') || JSON.stringify(this._getDefaultSetup());
             this._setup = JSON.parse(setupFromStorage);
         }
 
-        return this._setup;
+        return this._setup!;
     }
 
     saveCharacter(character: Character) {

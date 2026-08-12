@@ -1,3 +1,11 @@
 <button class="primary" (click)="goToMakeCharacter()">{{ 'home.go-make-character' | translate }}</button>
-<button class="primary" (click)="goToCharacter()">{{ 'home.go-character' | translate }}</button>
 <button class="primary" (click)="goToSettings()">{{ 'home.go-settings' | translate }}</button>
+
+<div class="characters" style="margin-top: 1rem;">
+    @for (character of getCharacters(); track character) {
+        <div style="display: flex; gap: 2rem">
+            <div>{{ character.name }} [{{ ('races.' + character.race.description) | translate }} {{ ('classes.' + character.class.description) | translate }}]</div>
+            <button class="primary" (click)="goToCharacter(character.id)">{{ 'home.go-character' | translate }}</button>
+        </div>
+    }
+</div>

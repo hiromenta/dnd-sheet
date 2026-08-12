@@ -16,6 +16,8 @@ export interface PartialCharacterModel {
 }
 
 export interface CharacterModel extends PartialCharacterModel {
+    id: string;
+
     maxLife: number;
     life: number;
     maxTar: number;
@@ -35,6 +37,8 @@ export class Character implements CharacterModel {
     charisma: number;
     wisdom: number;
     perception: number;
+
+    id: string;
 
     maxLife: number;
     life: number;
@@ -56,6 +60,8 @@ export class Character implements CharacterModel {
             this.wisdom = -4 + partialModel.wisdom + (this.race.bonusWisdom || 0) + (this.class.bonusWisdom || 0);
             this.perception = -4 + partialModel.perception + (this.race.bonusPerception || 0) + (this.class.bonusPerception || 0);
 
+            this.id = (this.name.trim().toLowerCase().replaceAll(' ', '')) + Math.round(Math.random() * 999999);
+
             this.maxLife = this.race.baseLife + this.class.baseLife;
             this.life = this.maxLife;
             this.maxTar = 30;
@@ -73,6 +79,8 @@ export class Character implements CharacterModel {
             this.wisdom = model.wisdom;
             this.perception = model.perception;
 
+            this.id = model.id;
+
             this.maxLife = model.maxLife;
             this.life = model.life;
             this.maxTar = model.maxTar;
@@ -83,12 +91,14 @@ export class Character implements CharacterModel {
             this.race = new Race();
             this.class = new CharacterClass();
             this.imageUrl = 'https://static.vecteezy.com/system/resources/thumbnails/034/098/052/small_2x/my-unchecked-illustration-design-free-png.png';
-
+            
             this.dexterity = -4 + (this.race.bonusDexterity || 0) + (this.class.bonusDexterity || 0);
             this.intelligence = -4 + (this.race.bonusIntelligence || 0) + (this.class.bonusIntelligence || 0);
             this.charisma = -4 + (this.race.bonusCharisma || 0) + (this.class.bonusCharisma || 0);
             this.wisdom = -4 + (this.race.bonusWisdom || 0) + (this.class.bonusWisdom || 0);
             this.perception = -4 + (this.race.bonusPerception || 0) + (this.class.bonusPerception || 0);
+
+            this.id = (this.name.trim().toLowerCase().replaceAll(' ', '')) + Math.round(Math.random() * 999999);
 
             this.maxLife = this.race.baseLife + this.class.baseLife;
             this.life = this.maxLife;
