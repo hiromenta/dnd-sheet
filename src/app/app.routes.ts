@@ -6,7 +6,8 @@ export enum Paths {
   HOME = '',
   CHARACTER = 'character',
   MAKE_CHARACTER = 'make-character',
-  SETTINGS = 'settings'
+  SETTINGS = 'settings',
+  ENCOUNTERS = 'encounters'
 }
 
 export const routes: Routes = [
@@ -14,6 +15,7 @@ export const routes: Routes = [
   { path: Paths.CHARACTER, loadComponent: () => import('./pages/character/character.component').then(m => m.CharacterComponent) },
   { path: Paths.MAKE_CHARACTER, loadComponent: () => import('./pages/make-character/make-character.component').then(m => m.MakeCharacterComponent) },
   { path: Paths.SETTINGS, loadComponent: () => import('./pages/settings/settings.component').then(m => m.SettingsComponent) },
+  { path: Paths.ENCOUNTERS, loadComponent: () => import('./pages/encounters/encounters.component').then(m => m.EncountersComponent) },
   { path: 'deyralein', loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent) },
   { path: '**', loadComponent: () => import('./pages/not-found/not-found.component').then(m => m.NotFoundComponent) }
 ];

@@ -26,8 +26,8 @@ export class Bard extends CharacterClass {
     override description: CharacterClasses = CharacterClasses.BARD;
     override baseLife: number = 10;
 
-    override bonusDexterity: number = 2;
-    override bonusWisdom: number = -2;
+    override bonusDexterity: number = -2;
+    override bonusWisdom: number = 2;
 
 }
 

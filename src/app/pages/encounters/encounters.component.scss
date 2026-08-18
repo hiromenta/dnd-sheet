@@ -1,0 +1,60 @@
+.encounters {
+    .encounter {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--primary);
+        padding: 0.25rem 0.5rem;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+
+        .life, .tar {
+            display: flex;
+            gap: 1rem;
+
+            .slider-wrapper {
+                height: 1rem;
+                width: 15rem;
+                background-color: var(--black);
+
+                .slider {
+                    height: 1rem;
+                }
+            }
+        }
+
+        .life {
+            .slider-wrapper {
+                .slider {
+                    background-color: var(--red);
+                }
+            }
+        }
+
+        .tar {
+            .slider-wrapper {
+                .slider {
+                    background-color: var(--violet);
+                }
+            }
+        }
+
+        .right {
+            .actions {
+                display: flex;
+                justify-content: space-between;
+
+                .less-tar, .more-tar {
+                    background-color: var(--violet);
+                    cursor: pointer;
+                    padding: 0rem 0.5rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+.add-encounter {
+    display: flex;
+    justify-content: center;
+}

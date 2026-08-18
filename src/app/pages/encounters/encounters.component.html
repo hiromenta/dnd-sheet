@@ -1,0 +1,44 @@
+<div class="encounters">
+    @for (encounter of getEncounters(); track encounter) {
+        <div class="encounter">
+            <div class="left">
+                <div class="name" (click)="editEncounter(encounter, 'name')">{{ encounter.name }}</div>
+                <button class="danger" (click)="deleteEncounter(encounter)">Elimina</button>
+            </div>
+
+            <div class="stats">                
+                <div class="life">
+                    <div (click)="editEncounter(encounter, 'life')">HP&nbsp;</div>
+
+                    <div class="slider-wrapper">
+                        <div class="slider" [style]="'width: ' + getWidth(encounter, 'life') + '%'"></div>
+                    </div>
+
+                    <div class="max-life" (click)="editEncounter(encounter, 'maxLife')">{{ encounter.life }}/{{ encounter.maxLife }}</div>
+                </div>
+
+                <div class="tar">
+                    <div (click)="editEncounter(encounter, 'tar')">TAR</div>
+
+                    <div class="slider-wrapper">
+                        <div class="slider" [style]="'width: ' + getWidth(encounter, 'tar') + '%'"></div>
+                    </div>
+
+                    <div class="max-tar" (click)="editEncounter(encounter, 'maxTar')">{{ encounter.tar }}/{{ encounter.maxTar }}</div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="initiative" (click)="editEncounter(encounter, 'initiative')">Ini: {{ encounter.initiative }}</div>
+                <div class="actions">
+                    <div class="less-tar" (click)="editTar(encounter, -2)">-2</div>
+                    <div class="more-tar" (click)="editTar(encounter, 2)">+2</div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="add-encounter">
+    <button class="primary" (click)="addEncounter()">{{ 'encounters.add-encounter' | translate }}</button>
+</div>

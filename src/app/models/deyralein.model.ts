@@ -1,5 +1,6 @@
 export interface DeyraleinSetup {
     charachters: CharacterModel[];
+    encounters: Encounter[];
 }
 
 export interface PartialCharacterModel {
@@ -172,4 +173,14 @@ export class CharacterClass {
     bonusWisdom!: number;
     bonusPerception!: number;
 
+}
+
+export interface Encounter {
+    id: number;
+    name: string;
+    maxLife: number;
+    life: number;
+    maxTar: number;
+    tar: number;
+    initiative: number;
 }

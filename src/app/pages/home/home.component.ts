@@ -15,6 +15,10 @@ export class HomeComponent {
 
     constructor (private _router: Router, private _deyraleinService: DeyraleinService) {}
 
+    goToEncounters() {
+        this._router.navigate([Paths.ENCOUNTERS]);
+    }
+
     goToMakeCharacter() {
         this._router.navigate([Paths.MAKE_CHARACTER]);
     }

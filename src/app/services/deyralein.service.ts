@@ -8,7 +8,8 @@ export class DeyraleinService {
 
     private _getDefaultSetup(): DeyraleinSetup {
         return {
-            charachters: []
+            charachters: [],
+            encounters: []
         };
     }
 

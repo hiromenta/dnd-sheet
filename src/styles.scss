@@ -147,6 +147,24 @@ button {
         }
     }
 
+    &.danger {
+        background-color: var(--danger);
+        color: var(--white);
+
+        &.outline {
+            border-color: var(--danger);
+            color: var(--danger);
+        }
+
+        &.link {
+            color: var(--danger);
+        }
+
+        &.disabled {
+            background-color: var(--grey);
+        }
+    }
+
     &.disabled {
         background-color: var(--grey);
         cursor: not-allowed;

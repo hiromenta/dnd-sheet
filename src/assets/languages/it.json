@@ -3,7 +3,8 @@
         "title": "Home",
         "go-make-character": "Crea il personaggio",
         "go-character": "Vai al personaggio",
-        "go-settings": "Vai a impostazioni"
+        "go-settings": "Vai a impostazioni",
+        "go-encounters": "Vai agli encounter"
     },
     "settings": {
         "title": "Impostazioni",
@@ -68,5 +69,8 @@
         "elf": "Possono capire quale magia c'è all'interno di un libro",
         "dwarf": "Possono identificare un materiale guardandolo",
         "orc": "Hanno +3 ai tiri di forza"
+    },
+    "encounters": {
+        "add-encounter": "Aggiungi encounter"
     }
 }
